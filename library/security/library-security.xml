@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="module_library_category" model="ir.module.category">
+        <field name="name">Library</field>
+    </record>
+
+    <!-- user group -->
+    <record id="library_user_group" model="res.groups">
+        <field name="name">User</field>
+        <field name="category_id" ref="module_library_category"/>
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+    </record>
+
+</odoo>
