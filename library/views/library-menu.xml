@@ -2,7 +2,7 @@
 <odoo>
 
     <act_window id="action_library_book" name="Library Book"
-    res_model="library.library" view_mode="tree,form"/>
+    res_model="library.library" view_mode="tree,form,kanban"/>
 
     <menuitem id="library-menu" name="Library Book" action="action_library_book"/>
 </odoo>
